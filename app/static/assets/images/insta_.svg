@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>insta' copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="12.6976744" height="12.0930233" rx="3.20835311"></rect>
+        <filter x="-16.7%" y="-17.5%" width="133.3%" height="135.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.616990982" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.136011096 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="6.65116279" cy="6.04651163" r="3.02325581"></circle>
+        <filter x="-35.0%" y="-35.0%" width="170.0%" height="170.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="0.616990982" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.136011096 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-5" cx="9.97674419" cy="2.72093023" r="1"></circle>
+        <filter x="-82.7%" y="-82.7%" width="265.4%" height="265.4%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.136011096 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Landign-Page" transform="translate(-171.000000, -3767.000000)">
+            <g id="Group-16" transform="translate(0.000000, 3557.000000)">
+                <g id="insta'-copy" transform="translate(171.000000, 210.000000)">
+                    <path d="M0,12.7702326 C0,5.71742752 5.72833864,0 12.7946032,0 C19.8608678,0 25.5892065,5.71742752 25.5892065,12.7702326 C25.5892065,19.8230376 19.8608678,25.5404651 12.7946032,25.5404651 C5.72833864,25.5404651 0,19.8230376 0,12.7702326 Z" id="back" fill="#8E99A8"></path>
+                    <g id="Icon" transform="translate(6.651163, 7.255814)">
+                        <g id="Camera-Frame">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use stroke="#FFFFFF" stroke-width="1.23398196" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="Oval-1">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use stroke="#FFFFFF" stroke-width="1.23398196" xlink:href="#path-3"></use>
+                        </g>
+                        <g id="Oval-2">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

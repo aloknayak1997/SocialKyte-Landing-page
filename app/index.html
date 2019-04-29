@@ -1,0 +1,118 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Socialfame</title>
+    <meta name="description" content=""">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#0049B0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0049B0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon">
+    <link rel="icon" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="./index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="/static/js/third_party/jquery.min.js"></script>
+    <script src="/scripts.js"></script>
+    <script src="/static/app.js"></script>
+</head>
+
+<body ng-app="main" ng-controller="main">
+    <div class="navbar_holder">
+        <div>
+            <a class="link-logo" href="/">
+                <img class="logo" src="../static/assets/images/logo.png">
+            </a>
+            <div ng-init="menuactive = 2" class="menu">
+                    <i ng-if="menuactive == 2" class="fas fa-bars"></i>
+                    <i ng-if="menuactive == 1" class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="navlinks">
+            <div>
+                <a class="active" href="/#!/home">Home</a>
+            </div>
+            <div>
+                <a href="/#!/aboutus">Solutions <i class="fas fa-chevron-down"></i></a>
+            </div>
+            <div>
+                <a href="/#!/contact">Contact</a>
+            </div>
+            <div>
+                <a href=""><i class="fas fa-phone"></i> +91 9811 655 129</a>
+            </div>
+            <div>
+                <a id="login" href="/login/" style="text-decoration: none;background: #ffffff;color: #5beaf3;border: 1.2px solid;padding: 9px 29px;border-radius: 20px;margin: 6px 25px;font-weight: 700;">
+                    Sign in </a>
+            </div>             
+        </div>
+        <div class="navlinks_mob">
+             <div>
+                <a class="active" href="/#!/home">Home</a>
+            </div>
+            <div>
+                <a href="/#!/aboutus">Solutions</a>
+            </div>
+            <div>
+                <a href="/#!/contact">Contact</a>
+            </div>
+            <div>
+                <a id="login" href="/login/" style="text-decoration: none;background: #ffffff;color: #5beaf3;border: 1.2px solid;/* padding: 6px 15px; */border-radius: 20px;margin: 6px 25px;font-weight: 700;">
+                    Sign in </a>
+            </div>             
+        </div>
+    </div>
+    <div class="container" ui-view> 
+    </div>
+    <div class="footer">    
+        <div class="footer-div">
+            <div class="footer-logo">
+                    <img class="logo" src="../static/assets/images/logo.png">
+            </div>
+            <div>
+                    We are an Influencer marketing platform powered by our own technology to assist you Maximize the effect of your branding activities. We are here to give freedom to your marketing campaigns!
+            </div>
+            <div class="sociallinks">
+                <img src="/static/assets/images/Facebook.svg" alt="">
+                <img src="/static/assets/images/insta_.svg" alt="">
+                <img src="/static/assets/images/Twitter.svg" alt="">
+            </div>
+        </div>
+        <div class="footer-div flex-row">
+            <div class="footer-cont">
+                <div class="footer-cont-head">
+                    Company
+                </div>
+                <div class="footer-cont-body">
+                    <div>About Us</div>
+                    <div>Career</div>
+                    <div>Term & Service</div>
+                </div>
+            </div>
+            <div class="footer-cont">
+                    <div class="footer-cont-head">
+                            Support
+                    </div>
+                    <div class="footer-cont-body">
+                        <div>Support</div>
+                        <div>Contact</div>
+                        <div>FAQ’s</div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div  class="footer" style="border: 1px solid #eee;font-family: CircularStdBook;font-size: 16px;font-weight: normal;font-style: normal;font-stretch: normal;line-height: normal;letter-spacing: normal;color: #6a7575;">    
+            <div class="footer-div">
+                    © Socialfame 2019. All rights reserved.
+            </div>
+            <div class="footer-div" style="width: fit-content;">
+                    Terms of Use | Privacy Policy
+            </div>
+    </div>
+</body>
+</html>

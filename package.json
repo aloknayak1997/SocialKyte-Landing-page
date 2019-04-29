@@ -1,0 +1,49 @@
+{
+  "name": "Digmkey",
+  "version": "1.0.0",
+  "description": "This is the frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Digimkey"
+  ],
+  "author": "Mushahid Khan",
+  "license": "MIT",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.20",
+    "angular": "^1.7.2",
+    "angular-animate": "^1.5.8",
+    "angular-aria": "^1.5.8",
+    "angular-loading-bar": "^0.9.0",
+    "angular-material": "^1.1.10",
+    "angular-material-data-table": "^0.10.9",
+    "angular-messages": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-sanitize": "^1.7.3",
+    "angular-trix": "^1.0.2",
+    "angular-ui-router": "^1.0.20",
+    "c3": "^0.4.11",
+    "d3": "^4.2.8",
+    "fs": "0.0.1-security",
+    "fullcalendar": "^3.0.1",
+    "gulp-s3": "^0.11.0",
+    "ionicons": "^3.0.0",
+    "jquery": "^3.1.0",
+    "moment": "^2.16.0",
+    "ng-flow": "^2.1.4",
+    "oclazyload": "^1.0.9",
+    "request": "^2.88.0",
+    "trix": "^0.9.9",
+    "var": "^0.3.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-version-number": "^0.2.3",
+    "main-bower-files": "^2.13.1"
+  }
+}

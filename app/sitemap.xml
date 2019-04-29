@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+	<url>
+	  <loc>https://web.digimkey.com/</loc>
+	  <lastmod>2019-02-14T06:57:18+00:00</lastmod>
+	  <changefreq>always</changefreq>
+	  <priority>1.00</priority>
+	</url>
+
+	<url>
+		<loc>https://web.digimkey.com/#!/request-demo</loc>
+		<changefreq>always</changefreq>
+		<priority>0.80</priority>
+	</url>
+
+	<url>
+		<loc>https://web.digimkey.com/#!/aboutus</loc>
+		<changefreq>always</changefreq>
+		<priority>0.80</priority>
+	</url>
+
+	<url>
+		<loc>https://web.digimkey.com/#!/contact</loc>
+		<changefreq>always</changefreq>
+		<priority>0.80</priority>
+	</url>
+
+	<url>
+		<loc>https://web.digimkey.com/#!/why-digimkey</loc>
+		<changefreq>always</changefreq>
+		<priority>0.80</priority>
+	</url>
+
+</urlset>
+
