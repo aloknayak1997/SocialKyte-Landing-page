@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Influencer Signup</title>
+    <link rel="stylesheet" href="/static/css/talent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="/static/js/third_party/jquery.min.js"></script>
+    <script src="/scripts.js"></script>
+    <script src="/static/app.js"></script>
+</head>
+<body ng-app="main" ng-controller="main">
+    <div class="left-div">  
+        <div class="bg">
+            <div id='logo'>
+                <img src="https://socialfaim.com/assets/images/logo.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div class="right-div">
+        <div class="head">
+            <div>Let's connect you with the right influencers for your brand.</div>
+        </div>
+        <div class="influencers">
+            <div ng-repeat="i in influencerchoices" class="influencerchoices active" data-animation-offset="1.{{$index}}">
+                <div>
+                    <div class="overlay"></div>
+                    <img src="https://lh3.googleusercontent.com/Es256aNb1QFn5Kjm1HdfR1yGPllOzSX38LH0rVAZdGzTEDKIMzzNNDzQ0V6-EdvXceBsLiF5f3A92nyJ6-Vn45apYwd0lG6HMcXN6-EEOmR56WiPqYcEvyQmPU6Ch7ISIfWT0FiOaNei5vSJyMnkQaq_x7E1VubEGrU4N7M15AOH6so1DEZESCCiEBL2C2afHAa7qLpMhnBtmy2B0OWC3oLP-0uUDEQ9pKm2NH-tyvKxKrIuu3moRQtxIx1qO69e94e31ehCYo8dwncZ4OMgSryFYrMPPnW7RTzJM0Jb3gMhnyGR3QRSouTJRKRVMTiO_dY0IUoV1rDtYbwabUIy9UZrs5ID07DwnykpEbt8OqjvOuJieAZ0qGvRx3SMHCzUUanT3n7te3PgZvDLc97pQTqzN59YSIE30upOHDw7Jm6WVxqFqPs77cbFgV_-0g-FI_wyywac8I5yNfJbkxc53-zOjniA8kHD8kLevBoQGjRAPxoDVrPM1RVqx2KlnYqFch2RKcIngeVk_mAfUOOQnStHICJ5GpMkduzeUDBVepxN86IgdWfopVzb8Jgua4rUimiVUeavgV4dXqusq-Thaa7Tk9N8zkk7JASNIE8=w1366-h695" alt="">
+                </div>
+                <div>
+                        {{i.name}}
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="nextbtn">
+                Next
+            </div>
+        </div>
+    </div>
+</body>
+</html>

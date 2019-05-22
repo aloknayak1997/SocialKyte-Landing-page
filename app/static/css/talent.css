@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "CircularStdBook";
+    src: url("/static/assets/fonts/CircularStd-Book.otf");
+    }
+    @font-face {
+      font-family: "CircularStdMedium";
+      src: url("/static/assets/fonts/CircularStd-Medium.otf");
+      }
+    @font-face {
+        font-family: "CircularStdBold";
+        src: url("/static/assets/fonts/CircularStd-Bold.otf");
+    }
+      @font-face {
+        font-family: "CircularStdBlack";
+        src: url("/static/assets/fonts/CircularStd-Black.otf");
+    }
+
+body {
+    margin: 0;
+    display: flex;
+}
+
+body > div {
+    height: 100vh;
+    width: 50%;
+}
+
+.right-div {
+    overflow: scroll;
+}
+
+.left-div > div {
+    height: 100%;
+    border: none;
+    background-color: rgba(60, 63, 102, 0.38);
+}
+
+div#logo > img {
+    width: 120px;
+}
+
+div#logo {
+    padding: 40px;
+}
+
+.left-div {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 700px 400px;
+    position: relative;
+    z-index: 1;
+    background-image: url(https://socialfaim.com/svg/loginillustration.svg);
+}
+
+.influencers {
+    display: grid;
+    grid-template-columns: 0.9fr 0.9fr 0.9fr;
+    height: 80vh;
+    overflow: auto;
+    padding: 10px 45px;
+    text-align: center;
+}
+
+.influencerchoices {margin: 5px 35px;font-family: CircularStdMedium;font-size: 13px;border-radius: 6px;overflow: hidden;height: fit-content;cursor: pointer;transition: all 0.3s ease-out;}
+
+.influencerchoices:active {
+    transform: scale(0.9);
+}
+.influencerchoices.active {
+    box-shadow: -1px 6px 20px -10px #47c1c9;
+    border: 2px solid #47c1c9;
+}
+.influencerchoices > div > img {
+    width: 100%;
+    height: 100%;
+}
+.head {
+    font-family: CircularStdBook;
+    font-size: 22px;
+    padding: 19px 0;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #000000;
+}
+.influencerchoices > div:last-child {
+    padding: 5px 0;
+    background: #80808014;
+    margin: 0;
+    border: 1px solid #eee;
+}
+
+.influencerchoices > div:first-child {
+    margin: 0;
+    position: relative;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: #0de2f230;
+    position: absolute;
+    display: none;
+}
+
+.influencerchoices.active > div > div.overlay {
+    display: block;
+}
