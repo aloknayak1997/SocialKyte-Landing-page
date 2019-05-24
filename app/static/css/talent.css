@@ -18,6 +18,7 @@
 body {
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 body > div {
@@ -55,30 +56,33 @@ div#logo {
 
 .influencers {
     display: grid;
-    grid-template-columns: 0.9fr 0.9fr 0.9fr;
-    height: 80vh;
+    grid-template-columns: 0.9fr 0.9fr 0.9fr 0.9fr;
+    height: 70vh;
     overflow: auto;
-    padding: 10px 45px;
+    padding: 35px 45px;
     text-align: center;
 }
 
-.influencerchoices {margin: 5px 35px;font-family: CircularStdMedium;font-size: 13px;border-radius: 6px;overflow: hidden;height: fit-content;cursor: pointer;transition: all 0.3s ease-out;}
+.influencerchoices {margin: 5px 9px;font-family: CircularStdMedium;font-size: 12px;border-radius: 6px;overflow: hidden;height: fit-content;cursor: pointer;transition: all 0.3s ease-out;}
 
 .influencerchoices:active {
     transform: scale(0.9);
 }
-.influencerchoices.active {
-    box-shadow: -1px 6px 20px -10px #47c1c9;
+.influencerchoices.active > div:first-child {
+    /* box-shadow: -1px 6px 20px -10px #47c1c9; */
     border: 2px solid #47c1c9;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .influencerchoices > div > img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    min-height: 100px;
 }
 .head {
     font-family: CircularStdBook;
     font-size: 22px;
-    padding: 19px 0;
+    padding: 15px 0;
     font-weight: 500;
     font-style: normal;
     font-stretch: normal;
@@ -87,17 +91,61 @@ div#logo {
     text-align: center;
     color: #000000;
 }
+
+.nextbtn {
+    background-color: #dee0f5;
+    color: #b1b3c2;
+    padding: 10px 24px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    font-family: CircularstdMedium;
+    font-size: 14px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    width: 80px;
+}
+
+.nextbtn.active {
+    background-color: #00d6e4;
+    color: #fafafa;
+}
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+}
+
+.nextbtn:active {
+    transform: scale(0.9);
+}
+
 .influencerchoices > div:last-child {
     padding: 5px 0;
-    background: #80808014;
+    /* background: #80808014; */
     margin: 0;
-    border: 1px solid #eee;
+    /* border: 1px solid #eee; */
+}
+
+.influencerchoices.active {
+    color: #00b4bf;
 }
 
 .influencerchoices > div:first-child {
     margin: 0;
     position: relative;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 7px;
 }
+.influencerchoices:focus {
+    outline: none;
+}
+
+.influencerchoices.active > div:first-child {
+}
+
 .overlay {
     width: 100%;
     height: 100%;
@@ -109,3 +157,55 @@ div#logo {
 .influencerchoices.active > div > div.overlay {
     display: block;
 }
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+@media screen and (max-width: 1260px) {
+    body {
+        margin: 0;
+        width: 100vw;
+        overflow-x: hidden;
+        height: 100%;
+    }
+    body > div {
+        height: fit-content;
+        width: 100vw;
+    }
+    .left-div {
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 340px 440px;
+        position: relative;
+        z-index: 1;
+        background-image: url(https://socialfaim.com/svg/loginillustration.svg);
+        height: 345px;
+    }
+    div#logo {
+        position: sticky;
+        top: 20px;
+        padding: 20px 40px;
+    }
+    .influencers {
+        display: grid;
+        grid-template-columns: 0.9fr 0.9fr 0.9fr 0.9fr;
+        height: 70vh;
+        overflow: auto;
+        padding: 35px 20px;
+        text-align: center;
+    }
+    .foot {
+        position: fixed;
+        bottom: 10px;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .head {
+        font-size: 16px;
+        text-align: center;
+        padding: 14px 61px;
+    }
+}   

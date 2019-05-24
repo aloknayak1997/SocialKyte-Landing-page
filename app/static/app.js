@@ -59,6 +59,73 @@ angular.module("main", ["ngRoute", "ngMaterial", "ngAria", "ui.router"])
                     })
                 }
             });
+
+            $scope.selectchoice = function(i){
+                $scope.influencerchoices[i].active = !$scope.influencerchoices[i].active;
+            }
+
+            $scope.influencerchoices = [
+                {
+                    'name':'Fashion',
+                    'active':false,
+                    'url':'/static/assets/social/image'
+                },
+                {
+                    'name':'Health & Fitness',
+                    'active':false,
+                    'url':'/static/assets/social/image'
+                },
+                {
+                    'name':'Technology',
+                    'active':false,
+                    'url':'/static/assets/social/image'
+                },
+                {
+                    'name':'Home Interior',
+                    'active':false,
+                    'url':'/static/assets/social/image'
+                },
+                {
+                    'name':'Travel',
+                    'active':false,
+                    'url':'/static/assets/social/image'
+                },
+                {
+                    'name':'Family',
+                    'active':false,
+                    'url':'/static/assets/social/image'
+                },
+                {
+                    'name':'Business & Finance',
+                    'active':false,
+                    'url':'/static/assets/social/image'
+                },
+                {
+                    'name':'Food & Drink',
+                    'active':false,
+                    'url':'/static/assets/social/image'
+                },
+                {
+                    'name':'Skincare',
+                    'active':false,
+                    'url':'/static/assets/social/image'
+                },
+                {
+                    'name':'Beauty',
+                    'active':false,
+                    'url':'/static/assets/social/image'
+                },
+                    {
+                    'name':'Sport',
+                    'active':false,
+                    'url':'/static/assets/social/image'
+                },
+                    {
+                    'name':'Photography',
+                    'active':false,
+                    'url':'/static/assets/social/image'
+                },
+            ]
         })
 
     .controller('home',
@@ -90,3 +157,34 @@ angular.module("main", ["ngRoute", "ngMaterial", "ngAria", "ui.router"])
 
 
         })
+
+    .filter('where', function () {
+        var matchProperty;
+        matchProperty = function (obj, key, shouldEqual) {
+            var value;
+            value = obj[key];
+            if (angular.isFunction(value)) {
+                value = value.call(obj);
+            }
+            return value === shouldEqual;
+        };
+        return function (input, properties) {
+            var i, k, r, v;
+            r = input.slice(0);
+            for (k in properties) {
+                v = properties[k];
+                i = 0;
+                while (i < r.length) {
+                    if (matchProperty(r[i], k, v)) {
+                        i++;
+                    } else {
+                        r.splice(i, 1);
+                    }
+                }
+                if (!r.length) {
+                    return r;
+                }
+            }
+            return r;
+        };
+    })

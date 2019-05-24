@@ -17,9 +17,6 @@
     }
 
 
-
-
-
 html,body {
     background: #cfd1d61c;
     background: #fff;
@@ -761,7 +758,7 @@ a.link-logo {display:  flex;align-items:  center;text-decoration:  none;color: #
 
 .hero > div:first-child {
     width: 500px;
-    margin: 120px 149px 120px 0;
+    margin: 50px 123px 120px 0;
 }
 
 .hero_content_body {
@@ -784,10 +781,11 @@ a.link-logo {display:  flex;align-items:  center;text-decoration:  none;color: #
 }
 
 .hero_content_img > img {
-    width: 650px;
-    margin: 40px 0;
-    /* box-shadow: 0 0 20px -8px #0000009e; */
-    /* border-radius: 24px 0 0 24px; */
+    width: 656px;
+    height: 410px;
+    margin: 40px 28px 40px 0;
+    box-shadow: 0 0 35px -8px #00000040;
+    border-radius: 24px;
     transition: all 0.4s;
     cursor: pointer;
 }
@@ -812,8 +810,8 @@ a.link-logo {display:  flex;align-items:  center;text-decoration:  none;color: #
 
 .btn-hero {
     border-radius: 25px;
-    padding: 14px 30px;
-    margin: 0 5px 0 0;
+    padding: 10px 30px;
+    margin: 0 12px 0 0;
     cursor: pointer;
     transition: all 0.4s ease;
 }
@@ -834,7 +832,8 @@ a.link-logo {display:  flex;align-items:  center;text-decoration:  none;color: #
 }
 
 .clients {
-    display: flex;
+    display: none;
+    /* display: flex; */
     flex-flow: wrap;
     padding: 10px 100px;
     align-items: center;
@@ -857,6 +856,10 @@ a.link-logo {display:  flex;align-items:  center;text-decoration:  none;color: #
     flex-direction: column;
     padding: 25px 0;
     background: #fff;
+}
+
+.feature.invert.ng-scope {
+    background: #f9faff;
 }
 
 .feature > .head {
@@ -1030,7 +1033,7 @@ a.link-logo {display:  flex;align-items:  center;text-decoration:  none;color: #
     align-items: center;
     justify-content: center;
     width: -webkit-fill-available;
-    margin: 10px 0;
+    margin: 10px 47%;
 }
 
 .circ {
